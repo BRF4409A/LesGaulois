@@ -9,7 +9,16 @@ public class Gaulois {
 		this.force = force;
 	}
 	
-	private String getNom() {
+	public String getNom() {
 		return nom;
+	}
+	
+	public void parler(String parole) {
+		System.out.println(parole);
+	}
+	
+	public static void main(String[] args) {
+		Gaulois asterix = new Gaulois("Asterix", 8);
+		asterix.parler("Bonjour à tous");
 	}
 }

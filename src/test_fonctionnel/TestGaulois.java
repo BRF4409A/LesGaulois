@@ -1,5 +1,10 @@
 package test_fonctionnel;
 
-public class TestGaulois {
+import personnages.Gaulois;
 
+public class TestGaulois {
+	public static void main(String[] args) {
+		Gaulois asterix = new Gaulois("Asterix", 8);
+		asterix.parler("Bonjour à tous");
+	}
 }
