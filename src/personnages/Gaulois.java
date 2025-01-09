@@ -14,7 +14,7 @@ public class Gaulois {
 	}
 	
 	public void parler(String parole) {
-		System.out.println(parole);
+		System.out.println("Le Gaulois " + getNom() + " : \"" + parole + "\".");
 	}
 	
 	public static void main(String[] args) {
