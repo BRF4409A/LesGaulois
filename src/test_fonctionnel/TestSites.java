@@ -14,8 +14,6 @@ public class TestSites {
 		Village village = new Village(vercingetorix);
 		Soldat minus = new Soldat("Minus", 2, Grade.SOLDAT);
 		Camp camp = new Camp(minus);
-		vercingetorix.parler("Je suis un grand guerrier et je vais créer mon village");
-		minus.parler("Je suis en charge de créer un nouveau camp romain");
 		
 		Gaulois agecanonix = new Gaulois("Agecanonix", 1);
 		Gaulois assurancetourix = new Gaulois("Assurancetourix",2);
@@ -33,11 +31,30 @@ public class TestSites {
 		camp.ajouterSoldat(tullisOctopus);
 		camp.ajouterSoldat(ballondebaudrus);
 		
+		System.out.println(" ");
+		
 		village.ajouterVillageois(agecanonix);
 		village.ajouterVillageois(assurancetourix);
 		village.ajouterVillageois(asterix);
 		village.ajouterVillageois(obelix);
 		village.ajouterVillageois(prolix);
+		
+		System.out.println(" ");
+		
+		village.afficherVillage();
+		camp.afficherCamp();
+		
+		System.out.println(" ");
+		
+		Gaulois abraracourcix = new Gaulois("Abraracourcix", 5);
+		Soldat briseradius = new Soldat("Briseradius", 4, Grade.SOLDAT);
+		Soldat chorus = new Soldat("Chorus", 4, Grade.CENTURION);
+		
+		village.changerChef(abraracourcix, true);
+		camp.changerCommandant(briseradius, false);
+		camp.changerCommandant(chorus, false);
+		
+		
 		
 		
 	}
