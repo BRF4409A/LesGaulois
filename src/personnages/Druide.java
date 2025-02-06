@@ -1,6 +1,6 @@
 package personnages;
 
-import object.Potion;
+import objects.Potion;
 
 public class Druide extends Gaulois{
 	private Potion potion;

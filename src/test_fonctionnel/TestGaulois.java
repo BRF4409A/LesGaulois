@@ -1,10 +1,10 @@
 package test_fonctionnel;
 
+import objects.Equipement;
 import personnages.Druide;
 import personnages.Gaulois;
 import personnages.Grade;
 import personnages.Soldat;
-import object.Equipement;
 
 public class TestGaulois {
 	public static void main(String[] args) {

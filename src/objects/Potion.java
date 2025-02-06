@@ -1,4 +1,4 @@
-package object;
+package objects;
 
 import java.security.SecureRandom;
 
@@ -13,14 +13,14 @@ public class Potion {
 	private SecureRandom random = new SecureRandom();
 	
 	public Potion() {
-		this.force = random.nextInt(FORCE_MIN,FORCE_MAX); 
-		this.nbDose = random.nextInt(DOSE_MIN,DOSE_MAX);
-		
 		try {
 			random = SecureRandom.getInstanceStrong();
 		} catch (Exception e) {
 		e.printStackTrace();
 		}
+		
+		this.force = random.nextInt(FORCE_MIN,FORCE_MAX); 
+		this.nbDose = random.nextInt(DOSE_MIN,DOSE_MAX);
 	}
 	
 	public int getForce() {

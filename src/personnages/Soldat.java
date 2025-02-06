@@ -1,6 +1,6 @@
 package personnages;
 
-import object.Equipement;
+import objects.Equipement;
 
 public class Soldat extends Romain {
 	private Grade grade;
