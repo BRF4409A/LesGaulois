@@ -12,6 +12,14 @@ public abstract class Personnage {
 	public String getNom() {
 		return nom;
 	}
+	
+	public int getForce() {
+		return force;
+	}
+	
+	public void setForce(int force) {
+		this.force = force;
+	}
 
 	public void parler(String parole) {
 		System.out.println("Le" + donnerAuteur() + nom + " : \"" + parole + "\".");
@@ -34,5 +42,9 @@ public abstract class Personnage {
 			chaine.append("\"J’abandonne…\"");
 		}
 		System.out.println(chaine);
+	}
+	
+	public boolean assomer() {
+		return (force <= 0);	
 	}
 }
