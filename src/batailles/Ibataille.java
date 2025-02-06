@@ -5,5 +5,5 @@ public interface Ibataille {
 	void choisirCombattant();
 	void preparerCombat();
 	void decrireCombat();
-	void DonnerResultat();
+	void donnerResultat();
 }

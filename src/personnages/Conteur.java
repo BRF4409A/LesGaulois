@@ -26,9 +26,9 @@ public class Conteur {
 		bataille.preparerCombat();
 		
 		System.out.println(" ");
-		//bataille.decrireCombat(String context);
+		bataille.decrireCombat();
 		
 		System.out.println(" ");
-		//bataille.DonnerResultat(String context);
+		bataille.donnerResultat();
 	}
 }
